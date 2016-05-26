@@ -21,7 +21,8 @@
     android:layout_height="wrap_content">
 
     <TextView
-        android:id="@+id/clockValue"        android:layout_width="match_parent"
+        android:id="@+id/clockValue"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbars="vertical"
         android:fadingEdge="vertical"

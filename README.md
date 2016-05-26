@@ -14,7 +14,7 @@ If you want an example on how to use it, you can find an example application in 
 
 Simple put this XML code to your layout to add an timer.
 ```
-<android.custom.widget.Counter
+<com.android.widget.Counter
         android:id="@+id/defaultTimer"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"

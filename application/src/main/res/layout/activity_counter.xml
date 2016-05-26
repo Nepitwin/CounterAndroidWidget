@@ -32,7 +32,7 @@
         android:text="@string/timer"
         android:gravity="center" />
 
-    <android.custom.widget.Counter
+    <com.android.widget.Counter
         android:id="@+id/defaultTimer"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"

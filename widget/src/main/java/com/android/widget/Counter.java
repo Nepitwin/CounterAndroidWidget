@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package android.custom.widget;
+package com.android.widget;
 
 import android.content.Context;
 import android.os.Handler;
@@ -23,7 +23,6 @@ import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.counter.R;
 
 /**
  * Clock timer ui component.

@@ -16,13 +16,13 @@
 
 package com.example.application;
 
-import android.custom.widget.Counter;
 import android.os.Bundle;
 import android.support.annotation.LayoutRes;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.application.R;
+
+import com.android.widget.Counter;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -53,8 +53,6 @@ public class CounterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_counter);
-
-        defaultTimer = (Counter) findViewById(R.id.defaultTimer);
 
         defaultTimerStart.setOnClickListener(new View.OnClickListener() {
             @Override
