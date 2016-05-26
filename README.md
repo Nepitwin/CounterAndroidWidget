@@ -1,7 +1,7 @@
-Simple Counter Widget
+Counter Android Widget
 ================
 
-Simple counter widget for Android. (API 15+)
+Counter widget for Android. (API 15+)
 
 ![Default Timer](images/default_timer.png)
 
@@ -10,9 +10,24 @@ Simple counter widget for Android. (API 15+)
 
 If you want an example on how to use it, you can find an example application in this repo.
 
+### Include widget to project
+
+To include this widget in your project, add this to your build.gradle file.
+```
+repositories {
+  maven {
+    url "https://dl.bintray.com/nepitwin/maven/"
+  }
+}
+
+dependencies {
+  compile 'Counter:widget:1.0@aar'
+}  
+```
+
 ### Code usage
 
-Simple put this XML code to your layout to add an timer.
+To add an timer, put this XML code to an Android layout.
 ```
 <com.android.widget.Counter
         android:id="@+id/defaultTimer"
@@ -22,7 +37,7 @@ Simple put this XML code to your layout to add an timer.
         android:orientation="vertical" />
 ```
 
-In activity logic get widget timer by id.
+In activity logic get counter widget by ID.
 ```
 // Bind example with butterknife
 @Bind(R.id.defaultTimer)
@@ -36,18 +51,6 @@ defaultTimer.runTimer();
 
 // Example to stop timer.
 defaultTimer.stopTimer();
-```
-
-### Import widget to project
-
-Build .aar file from project with
-```
-   gradle build
-```
-
-and import created .aar file in an Android project.
-```
-   /widget/build/outputs/aar/widget-release.aar
 ```
 
 ### License
